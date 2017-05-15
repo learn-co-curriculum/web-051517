@@ -1,4 +1,4 @@
-#Git and Github
+# Git and Github
 -
 ![git does not equal github](http://1.bp.blogspot.com/-WY2YpNr3W6g/UY6tZAc-H3I/AAAAAAAABLY/xJ9x3wIY8V8/s440/Github2.png)  
 
@@ -8,17 +8,17 @@
 | Feel comfortable with add/commit/revert changes to code|
 | Push changes to github for the world to see  |  
 
-###Git Commands Cheatsheet
+### Git Commands Cheatsheet
 
 - `git init`  initializes a git repository
 
-#####Saving Changes
+##### Saving Changes
 
 - `git add <filename>` adds a file or changes in a file to a repository
 - `git add -A` adds everything in current directory (files and changes) to a repository
 - `git commit -m <meassage>` saves changes you've made to the repository
 
-#####Reverting Changes
+##### Reverting Changes
 
 - `git reset <Log Number>` resets git repo to specific commit 
 - `git reset --hard <Log Number>` reset git repo, and current directory to specific commit
@@ -26,7 +26,7 @@
 - `git commit --amend` Adds changes to previous commit
 	- `git commit --amend -m "New message"` changes your previous commit message
 
-#####Working with Remotes
+##### Working with Remotes
 
 - `git remote add <remote_name> <url>` connects repo to a remote url (usually github)
 - `git remote rm <remote_name>` removes a previously added remote
@@ -38,7 +38,7 @@
 
 - `git clone <url>` copy's a repo from github
 
-#####Working with Branches
+##### Working with Branches
 
 - `git branch` lists different branches
 - `git branch <new_branch_name>` creates a new branch
@@ -47,7 +47,7 @@
 
 - `git merge <branch_name>` merges the specified branch into the working branch
 
-#####Helpful Commands
+##### Helpful Commands
 
 - `git help` lists possible git commands
 - `git status` shows changes that have not been committed
@@ -57,7 +57,7 @@
 - `git config --global user.name "John Doe"` sets a name that will be attached to commits
 - `git config --global user.email johndoe@example.com` sets an email that will be attached to commits
 
-###Basic Git Workflow
+### Basic Git Workflow
 --
 
 **Step 1:** Create a new directory `mkdir new_directory`  
@@ -77,9 +77,9 @@
 **Step 7:** Create a repo on Github
 
 
-###Working with Github
+### Working with Github
 
-####How to Create a Repo
+#### How to Create a Repo
 
 1. Click "New Repo"
 
@@ -100,9 +100,9 @@
   `git commit -m "new message"`  
   `git push origin master`
   
-###Git Branching and Merge Conflicts
+### Git Branching and Merge Conflicts
 --    
-####Creating a Branch
+#### Creating a Branch
 
 There are two ways to create a branch in git.  
 
@@ -113,7 +113,7 @@ There are two ways to create a branch in git.
 **Option 2:**  
   `git checkout -b <new_branch>` creates a new branch and moves you to it  
 
-####Moving Between Branches
+#### Moving Between Branches
 
 To move between branches:  
 `git checkout <branch_I_want_to_go_to>` moves you to specified branch.  
@@ -121,7 +121,7 @@ To move between branches:
 To list available branches:  
 `git branch` will list all branches.  
 
-####Merging Branches
+#### Merging Branches
 
 We can combine two branches together by using `git merge`  
 
@@ -131,7 +131,7 @@ In order to combine the two (from the master branch), we run...
 
 `git merge feature`  
 
-###Merge Conflicts
+### Merge Conflicts
 
 Git is smart, but not that smart. Merge conflicts occur when the changes between 2 branches overlap, and git is not sure which version you want.  
 
@@ -173,7 +173,7 @@ git commit -m "Fixed conflict"
 
 
 
-####How to Create a Pull Request on Github
+#### How to Create a Pull Request on Github
 
 *Before you can open a pull request, you must create a branch in your local repository, commit to it, and push the branch to a repository or fork on GitHub.*  
 
@@ -190,7 +190,7 @@ git commit -m "Fixed conflict"
 
 
 
-###Resources
+### Resources
 
 Official Documentation: http://git-scm.com/doc  
 Try Git Tutorial: http://try.github.io/levels/1/challenges/1  
