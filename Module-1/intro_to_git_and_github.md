@@ -57,7 +57,7 @@
 - `git config --global user.name "John Doe"` sets a name that will be attached to commits
 - `git config --global user.email johndoe@example.com` sets an email that will be attached to commits
 
-###Baisc Git Workflow
+###Basic Git Workflow
 --
 
 **Step 1:** Create a new directory `mkdir new_directory`  
