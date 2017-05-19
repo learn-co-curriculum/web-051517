@@ -16,7 +16,7 @@ competencies: Classical Inheritance
 1. What is an instance method?
 1. What is self?
 
-
+[](https://www.protechtraining.com/static/bookshelf/ruby_tutorial/xself1.png.pagespeed.ic.Ti_dsV97N1.png)
 
 ##Objectives:
 
