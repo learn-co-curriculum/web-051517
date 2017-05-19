@@ -8,17 +8,18 @@ creator:
 competencies: Classical Inheritance
 ---
 
-#Inheritance and Composition
+# Inheritance and Composition
+---
 
 
-##Quick Review:
+## Quick Review
 
 1. What is an instance method?
 1. What is self?
 
 [](https://www.protechtraining.com/static/bookshelf/ruby_tutorial/xself1.png.pagespeed.ic.Ti_dsV97N1.png)
 
-##Objectives:
+## Objectives:
 
 1. Describe what inheritance is and identify the benefits & disadvantages of its use. Create  2 classes in which one class inherits from another class.
 1. Create a class that can override methods from it's parent class.
@@ -26,7 +27,7 @@ competencies: Classical Inheritance
 2. Use modules for name::spacing.
 3. Include, prepend and extend.
 
-##Inheritance:
+## Inheritance:
 
 - Inheritance is used to indicate that one class will get most or all of its features from a parent class.
 - You design the class types based on what they are.
@@ -39,7 +40,7 @@ competencies: Classical Inheritance
 
 >Example: Suppose you're building an application that helps you ship goods. Many forms of shipping are available, but all forms share some basic functionality (weight calculation, perhaps). We don’t want to duplicate the code that implements this functionality across the implementation of each shipping type.
 
-##Demo
+## Demo
 
 ```
 class Animal
@@ -65,7 +66,7 @@ end
     - Benefits and disadvantages to single & multiple inheritance
     - In Ruby, initialize is an ordinary method and inherited just like another method.
 
-##Code-Along
+## Code-Along
 
 ```
 class Box
@@ -93,10 +94,10 @@ end
 1.) How would I print the area of the BigBox?
 ```
 
-##Exercise #1:
+## Exercise #1:
 Create a Mammal class, Cat class, and Dog class. Have Cat and Dog inherit from Mammal. Include some attributes for each class and a method for mammal.
 
-##Overriding & Super:
+## Overriding & Super:
 
 Demo
 
@@ -129,7 +130,7 @@ puts Lab.new("Labrador", "Ben").to_s
 - Called with an empty argument list - super()-it sends no arguments to the higher-up method, even if arguments were passed to the current method.
 - Called with specific arguments - super(a, b, c) - it sends exactly those arguments.
 
-##Modules and mixins
+## Modules and mixins
 We introduced the idea that we can describe an app with a set of object classes or models, and give each object its own file.
 
 This allows us to break our code up by placing a method inside the relevant object definition.
@@ -144,7 +145,7 @@ My Human class inherits a lot of useful funcitonality from Mammal class, however
 
 There are cases where we'll want to include common functionality in classes that don't have a logical common ancestor.
 
-####Example
+#### Example
 ```
 require "pry"
 
@@ -241,7 +242,7 @@ end
 - include is easy enough to understand, it adds the module's methods as instance methods to it's including class. You can think of extend doing the same thing, but instead adding the methods as class methods.
 - In addition to include/extend, Ruby 2.0+ adds the prepend method. prepend is similar to include, but instead inserts the module before the including class in the inheritance chain.
 
-###Summary:
+### Summary:
 
 A Module is just a collection of methods. We can include it into classes or just instances so that the methods within the module are available as instance methods.
 
