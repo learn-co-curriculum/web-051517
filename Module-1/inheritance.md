@@ -42,7 +42,7 @@ competencies: Classical Inheritance
 
 ## Demo
 
-```
+```ruby
 class Animal
   def speak
     puts "I am an animal"
@@ -50,7 +50,7 @@ class Animal
 end
 ```
 
-```
+```ruby
 class Person < Animal
     def initialize(age, gender, name)
         @age = age
@@ -68,7 +68,7 @@ end
 
 ## Code-Along
 
-```
+```ruby
 class Box
 
   def initialize(w, h)
@@ -101,7 +101,7 @@ Create a Mammal class, Cat class, and Dog class. Have Cat and Dog inherit from M
 
 Demo
 
-```
+```ruby
 class Dog  
   def initialize(breed)  
     @breed = breed  
@@ -146,7 +146,7 @@ My Human class inherits a lot of useful funcitonality from Mammal class, however
 There are cases where we'll want to include common functionality in classes that don't have a logical common ancestor.
 
 #### Example
-```
+```ruby
 require "pry"
 
 class Human
@@ -193,7 +193,7 @@ nil
 
 We can see that human has a method walk and so does dog, so again we are seeing some repetition we want to eliminate: lets comment out those methods for both classes:
 
-```
+```ruby
 class Human
   ...
   # def walk
@@ -212,7 +212,7 @@ We will take this functionality out into a module.
 
 Create walkable.rb within _modules_ folder, inside this file we will declare a module, here's the syntax:
 
-```
+```ruby
 module Walkable
   def walk
     puts "walking"
@@ -225,7 +225,7 @@ Now, since this is a separate file, before we can use this module we need to req
 
 Now we can include this module in our human class and here's this is a syntax:
 
-```
+```ruby
 class Human
 
   include Walkable   #all you need to do to include the methods form the module
