@@ -54,7 +54,7 @@ Module1.accept_Student => "Welcome to Flatiron School"
 
 If we had _included_ the module instead of _extended_ the module. What would we have done differently?
 
-Lets refactor some code using modules. (To the Lab!)[https://learn.co/tracks/web-development-immersive-2-0-module-one/object-oriented-ruby/object-architecture/intro-to-modules-lab]
+Lets refactor some code using modules. [To the Lab!](https://learn.co/tracks/web-development-immersive-2-0-module-one/object-oriented-ruby/object-architecture/intro-to-modules-lab)
 
 Before you start refactoring ask yourself:
 
