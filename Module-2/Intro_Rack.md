@@ -5,7 +5,7 @@ duration: "1hr"
 creator:
     name: Tony Guerrero
     city: NYC
-competencies:  HTTP and Servers w/Ruby 
+competencies:  HTTP and Servers w/Ruby
 ---
 
 
@@ -42,7 +42,7 @@ Rack is the underlying technology behind nearly all of the web frameworks in the
 
 - An architecture - Rack defines a very simple interface, and any code that conforms to this interface can be used in a Rack application. This makes it very easy to build small, focused, and reusable bits of code and then use Rack to compose these bits into a larger application.
 - A Ruby gem - Rack is is distributed as a Ruby gem that provides the glue code needed to compose our code.
-    
+
 
 Rack defines a very simple interface. Rack compliant code must have the following three characteristics:
 
@@ -78,7 +78,7 @@ end
 run Montana.new
 ```
 
->Reminder: view the 'env' arg. 
+>Reminder: view the 'env' arg.
 
 In the sample we implement a class with a single instance method, call, that takes in the env and always returns a 200 (HTTP "OK" status), a "Content-Type" header, and the body of "Say Hello...".
 
@@ -90,7 +90,7 @@ We can now run our application by typing:
 rackup config.ru
 ```
 
->Aside: We can respond with html by changing the content-type. 
+>Aside: We can respond with html by changing the content-type.
 
 
 ```ruby
@@ -104,7 +104,7 @@ run Montana.new
 ```
 I Do: Middleware - 5 minutes
 -
-One of the things that makes Rack so great is how easy it is to add a chain middleware components between the webserver and the app to customize the way your request/response behaves. 
+One of the things that makes Rack so great is how easy it is to add a chain middleware components between the webserver and the app to customize the way your request/response behaves.
 
 
 But what is a middleware component?
@@ -114,15 +114,22 @@ A middleware component sits between the client and the server, processing inboun
 **Using middleware**:
 To add middleware to a Rack application, all you have to do is tell Rack to use it. You can use multiple middleware components, and they will change the request or response before passing it on to the next component. This series of components is called the middleware stack.
 
+>Must seperate in different file for this to work as middleware.
 
 ```ruby
+#montana.rb
 class Montana
   def call(env)
     Rack::Response.new("<h1>Say hello to my little friend!</h1>")
   end
 end
+```
 
-use Rack::Reloader 0
+```ruby
+#config.ru
+require "./montana.rb"
+
+use Rack::Reloader, 0
 run Montana.new
 ```
 
@@ -151,7 +158,7 @@ run Montana.new
 ```
 Who wants to write HTML in a string everytime?? `Luis!` That seems lame.. Tony is here to save the day. Copy pasta the below and lets render us some html... html.erb that is!
 
->Reminder: Explain what template engines are and why they are useful. 
+>Reminder: Explain what template engines are and why they are useful.
 
 
 **Templating**
@@ -180,7 +187,7 @@ or
 ```mkdir views; touch views/index.html.erb;```
 for _fish shell_ (ask me later)
 
->Reminder: paste in HTML to index.html.erb from bootstrap or anywhere. 
+>Reminder: paste in HTML to index.html.erb from bootstrap or anywhere.
 
 Step 4:
 
@@ -204,7 +211,7 @@ end
 use Rack::Reloader 0
 run Montana.new
 ```
->binding() is a kernel method that returns the binding--essentially the scope which code is being executed. Not only that, binding() returns the binding as an object, so you can store it for future use, and even pass it around. That means that you can request the scope of a block of code (the variables that are available to it) at that time in execution, and use it at another time, when that scope might have already expired. 
+>binding() is a kernel method that returns the binding--essentially the scope which code is being executed. Not only that, binding() returns the binding as an object, so you can store it for future use, and even pass it around. That means that you can request the scope of a block of code (the variables that are available to it) at that time in execution, and use it at another time, when that scope might have already expired.
 
 ---
 
@@ -236,7 +243,7 @@ end
 ```
 
 **What do you see?**
-Lots of stuff; `path`, `body` etc. What do you think we can do with the path?... 
+Lots of stuff; `path`, `body` etc. What do you think we can do with the path?...
 
 
 
@@ -256,14 +263,14 @@ class Montana
 end
 ```
 
-Congradulations! You made a rack application! As you can see there requires tons of setup to build this out. Think about how long my case statement could get if we were building a large application. No need to worry SINATRA is here! 
+Congradulations! You made a rack application! As you can see there requires tons of setup to build this out. Think about how long my case statement could get if we were building a large application. No need to worry SINATRA is here!
 
 **Jimnalogy**
 ![](https://cdn0.vox-cdn.com/thumbor/dmcYsUd4VInsNdVl9jEEO_KbjPw=/800x0/filters:no_upscale()/cdn0.vox-cdn.com/uploads/chorus_asset/file/8518019/not_hot_dog_app.png)
 
 NOT HOT DOG IS A 404
 
-## Closing - 5 mins 
+## Closing - 5 mins
 -
 **What did we learn?**
 - What is a ru file?
@@ -280,7 +287,3 @@ https://robots.thoughtbot.com/lets-build-a-sinatra
 https://github.com/JoelQ/intro-rack-notes
 http://gabebw.com/blog/2015/08/10/advanced-rack
 https://www.youtube.com/watch?v=7u5TvA_l1wo#t=78.425416
-
-
-
-
