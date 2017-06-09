@@ -1,14 +1,5 @@
-<!-- ---
 
-title: Intro to Rails
-type: lesson
-duration: 1hr
-creator: Tony Guerrero
-competencies: Programming, Server Applications
-
---- -->
-
-# Intro to rails
+# Intro to Rails
 
 ### Objectives
 *After this lesson, students will be able to:*
@@ -298,3 +289,28 @@ rails g model MODEL_NAME [fields]
 ```
 
 This will generate the model by itself along with the migration containing all the fields and the data types if you wrote them when you typed the console.
+
+#### Generate a migration
+
+In Sinatra you had to create your migrations by hand. As with most things in Rails, theres an generator for that.
+
+```ruby
+rails g migration AddAgeToPets age:integer
+```
+
+By following certain conventions like the one above, rails will generate a migration that specifically adds the age column to your existing pets column.
+
+```ruby
+class AddAgeToPet < ActiveRecord::Migration[5.1]
+  def change
+    add_column :pets, :age, :integer
+  end
+end
+
+```
+
+#### Conclusion
+
+Rome wasn't built in a day and neither can someone learn Rails in a day. Keep coding and it will all come together.
+
+[Rails Guides](http://guides.rubyonrails.org/index.html)
