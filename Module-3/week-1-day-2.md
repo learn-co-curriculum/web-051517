@@ -33,3 +33,6 @@ Remember, if you finish early...check out these CoderWars!
  * [Understanding this](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)
  * [Call and Apply](https://medium.com/@noraesae/call-apply-and-bind-in-javascript-685655a79734)
 
+## Videos
+
+ * [https://youtu.be/E6E4PcLmasU](https://youtu.be/E6E4PcLmasU)
