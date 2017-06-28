@@ -31,3 +31,4 @@ Remember, if you finish early...check out these CoderWars!
 ## Videos
 
  * [https://youtu.be/AyVLCTNTMnU](https://youtu.be/AyVLCTNTMnU)
+ * [Objects](https://youtu.be/NCQMc6KB2Yo)
