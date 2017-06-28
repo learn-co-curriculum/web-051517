@@ -30,3 +30,4 @@ Remember, if you finish early...check out these CoderWars!
 
 ## Videos
 
+ * [https://youtu.be/AyVLCTNTMnU](https://youtu.be/AyVLCTNTMnU)
