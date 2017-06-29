@@ -29,3 +29,5 @@ Remember, if you finish early...please Slack me (@joe) Moving forward onto React
  * [Understanding Async](https://medium.freecodecamp.org/understanding-asynchronous-javascript-callbacks-through-household-chores-e3de9a1dbd04)
 
 ## Videos
+
+ * [jQuery and The Dom](http://youtu.be/oOSXKSotPyg)
