@@ -29,3 +29,4 @@ Remember, if you finish early...please Slack me (@joe) Moving forward onto React
 
 ## Videos
 
+ * [AJAX](http://youtu.be/kmfM1ysokYo)
