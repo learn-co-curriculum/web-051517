@@ -18,3 +18,4 @@ Stop doing other labs, and make it through the `to_json` labs at least. This sho
 
 ## Videos
 
+ * [Rails APIs](http://youtu.be/cz61najYGYQ)
