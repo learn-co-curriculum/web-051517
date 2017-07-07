@@ -23,3 +23,5 @@ In the Code Challenge on Monday will be mostly basic JS, DOM manipulation and a 
 ## Videos
 
  * [Refactoring JS](https://youtu.be/cQp01HVeXDY)
+ * [In Class Refactoring](http://youtu.be/5s6Kgg3gWCA)
+ * [Github API Lab Review](http://youtu.be/5wOEOveqH5w)
