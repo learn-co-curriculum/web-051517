@@ -1,7 +1,8 @@
 <iframe src="https://calendar.google.com/calendar/embed?mode=WEEK&src=flatironschool.com_olk0a79jrplg5tcd1ormoq6o5k%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-## Topics for 7/18/17
+## Topics for 7/19/17
 
- * State and Events
- * Props and State
  * Component Lifecycle
+ * Smart Components
+ * Dumb Components
+ * React Async
