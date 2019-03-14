@@ -23,6 +23,8 @@
 
 ## Intro: What is Rails (10 mins)
 
+You can optionally choose to start this lecture by showing [this video](https://www.youtube.com/watch?v=9ML8PrP3A8E) of a Sinatra app being built to remind students of where they have been this week and highlight the problems that Rails is solving for them.
+
 Rails was created in 2003 by David Heinemeier Hansson, while working on the code base for Basecamp, a project management tool by 37signals. David extracted Ruby on Rails and officially released it as open source code in July of 2004. Despite rapid iteration of the Rails code base throughout the years, it has stuck to three basic principles:
 
 * Ruby Programming Language
