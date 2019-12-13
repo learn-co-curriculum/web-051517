@@ -16,7 +16,7 @@
 *Before this lesson, students should already be able to:*
 
 - Execute ruby code in `irb`
-- Explain the difference between HTTP request/request
+- Explain the difference between HTTP request/response
 - Explain MVC
 - Describe SQL
 - Write SQL select statements
